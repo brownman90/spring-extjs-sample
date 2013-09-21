@@ -27,7 +27,7 @@ tested on:
 
 known limitations and drawbacks:
 
-- root url of application is not mapped to homepage correctly. you should start with url like: http://localhost:8080/sample/page/home.jsp?
+- root url of application is not mapped to homepage correctly. you should start with url like: http://localhost:8080/sample/page/home.jsp
 
 - application assembly isn't very efficient due to resources unpack in process-resources build phase. a better approach might be creation of a custom resource handler to retrieve content from jars on a classpath.
 
