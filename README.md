@@ -10,6 +10,7 @@ server storage relies on in-memory H2 database with Hibernate/JPA api's.
 
 project is built with maven.
 no need to download extjs, bootstrap or jquery separately. all dependencies are managed by maven.
+just run 'mvn package' and deploy 'sample.war' from project 'target' dir to your servlet container. 
 
 
 
