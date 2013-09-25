@@ -9,22 +9,21 @@
     <title>Whatever Company</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/sample/resources/js/META-INF/resources/webjars/bootstrap/3.0.0/css/bootstrap.css" rel="stylesheet">
+    <link href="<c:url value="/resources/js/META-INF/resources/webjars/bootstrap/3.0.0/css/bootstrap.css"/>" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/sample/resources/css/navbar.css" rel="stylesheet">
+    <link href="<c:url value="/resources/css/navbar.css"/>" rel="stylesheet">
 
     <%--Extjs core styles--%>
-    <link rel="stylesheet" type="text/css"
-          href="/sample/resources/js/META-INF/resources/webjars/extjs/4.2.1.883/resources/css/ext-all.css"/>
+    <link href="<c:url value="/resources/js/META-INF/resources/webjars/extjs/4.2.1.883/resources/css/ext-all.css"/>" rel="stylesheet">
 
 </head>
 
 <body>
-<script src="/sample/resources/js/META-INF/resources/webjars/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/META-INF/resources/webjars/jquery/1.9.0/jquery.js"/>"></script>
 <script type="text/javascript">
     var dept = '${param.dept}';
-    var restSourceBase = '/sample/ws.wassup';
+    var restSourceBase = '${pageContext.request.contextPath}/ws.wassup';
 </script>
 
 <div class="container">
@@ -41,9 +40,9 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li id="btn_all"><a href="/sample/page/home.jsp">All Departments</a></li>
-                <li id="btn_A"><a href="/sample/page/home.jsp?dept=A">Department A</a></li>
-                <li id="btn_B"><a href="/sample/page/home.jsp?dept=B">Department B</a></li>
+                <li id="btn_all"><a href="<c:url value="/index.jsp"/>">All Departments</a></li>
+                <li id="btn_A"><a href="<c:url value="/index.jsp?dept=A"/>">Department B</a></li>
+                <li id="btn_B"><a href="<c:url value="/index.jsp?dept=B"/>">Department B</a></li>
             </ul>
         </div>
     </div>
@@ -75,8 +74,8 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/sample/resources/js/META-INF/resources/webjars/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/sample/resources/js/META-INF/resources/webjars/extjs/4.2.1.883/bootstrap.js"></script>
-<script type="text/javascript" src="/sample/resources/js/employee-grid.js"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/META-INF/resources/webjars/bootstrap/3.0.0/js/bootstrap.min.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/META-INF/resources/webjars/extjs/4.2.1.883/bootstrap.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/employee-grid.js"/>"></script>
 </body>
 </html>
