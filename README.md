@@ -17,19 +17,13 @@ just run 'mvn package' and deploy 'sample.war' from project's 'target' dir to yo
 tested on:
 
 - os: Linux 3.2.0-4-amd64 #1 SMP Debian 3.2.46-1 x86_64 GNU/Linux
-
 - java: 1.7.0_40-b43
-
 - maven: 3.1.0
-
 - tomcat 7.0.42
 
 
 
 known limitations and drawbacks:
 
-- root url of application is not mapped to homepage correctly. you should start with url like: http://localhost:8080/sample/page/home.jsp
-
 - application assembly isn't very efficient due to resources unpack in process-resources build phase. a better approach might be creation of a custom resource handler to retrieve content from jars on a classpath.
-
 - REST service retrieves all data from storage without paging so it can't be used for sufficently large amounts of data.
